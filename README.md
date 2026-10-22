@@ -19,3 +19,7 @@ EGMS: https://egms.land.copernicus.eu/
 Budynki: https://eubucco.com/data/download/v0.2
 
 Dokumentacja: https://land.copernicus.eu/en/products/european-ground-motion-service?tab=documentation
+
+## Zasięg danych
+
+Plik EGMS obejmuje cały kafel 100 × 100 km. Przed analizą punkty są filtrowane według `data/AOI/Leczna.shp`. Współrzędne `easting` i `northing` w pliku EGMS są interpretowane jako EPSG:3035; AOI jest przekształcany do tego CRS przed filtrowaniem.
